@@ -30,7 +30,7 @@ public class HttpUrlChecker {
 
     static Pattern getRegex() {
         if (regex == null)
-            regex = Pattern.compile("^https?://([^\\s-]\\S*[^\\s-]\\.)*[^\\s-][^\\s.]*[^\\s-.]\\.[a-z]+$");
+            regex = Pattern.compile("^https?://([^\\s-](\\S*[^\\s-])?\\.)*[^\\s-]([^\\s.]*[^\\s-.])?\\.[a-z]+$");
 
         return regex;
     }
