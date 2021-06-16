@@ -30,7 +30,7 @@ public class HttpUrlChecker {
 
     static Pattern getRegex() {
         if (regex == null)
-            regex = Pattern.compile("^http://.*\\.[a-z]+$");
+            regex = Pattern.compile("^http://(.*\\.)*.*\\.[a-z]+$");
 
         return regex;
     }
